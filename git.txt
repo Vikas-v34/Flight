@@ -1,0 +1,157 @@
+WHEN MY REMOTE REPOSITORY IS ALREADY EXISTS AND I WANT TO CLONE IT
+------------------------------------------------------------------
+
+Step 0: To set global username and email
+
+>> git config --global user.email "thouseef31398@gmail.com"
+>> git config --global user.name "MohammedThouseef"
+
+Step 1: Create git remote repository (https://github.com)
+Step 2: Clone the Repository (Folder) just you have created.
+
+>> git clone url_repo
+
+Step 3: Add any file to working repository(folder)
+Step 4: To check whether any untracked file present in working tree
+
+>> git status
+
+Step 5: Add the files to staging area (use "git rm --cached <file>..." to unstage)
+
+>> git add file_name
+>> git add . ( for more than 1 file)
+
+Step 6: To save from staging area to local repository
+
+>> git commit -m "commit mesaage"
+
+Step 7: To push the files to remote repository
+
+>> git push
+usrname:??
+password:??
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SCENARIO-2
+----------
+WHEN I CREATE FIRST LOCAL REPOSITORY AND THEN PUSH THE CONTENTS TO REMOTE REPOSITORY
+------------------------------------------------------------------------------------
+
+Step 1: Create empty local repository
+
+>> git init
+
+Step 2: Add new file to working tree
+Step 3: Add file to staging area
+
+>> git add README.md
+>> git add .
+
+Step 4: Save the files to local repository
+
+>> git commit -m "first commit"
+
+Step 5: Set push url
+
+>> git remote add origin remote url
+
+Step 6: Push the files to remote repository
+
+>> git push -u origin master
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+To check what all branches available
+
+>> git branch
+
+To create a new branch
+
+>> git branch "new branch name"
+
+To switch to new branch
+
+>> git checkout "branch name"
+
+To merge new branch in master branch
+
+>> git merge "branch name"
+
+To push to a particular branch
+
+>> git push origin "branch name"
+
+To delete the branch from local repository
+
+>> git branch -d "branch name"
+
+To delete the branch from remote repository
+
+>> git push origin -d "branch name"
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step 0:To set global username and email
+	git config --global user.email "vikas.vishwakarma15@siesgst.ac.in"
+	git config --global user.name "Vikas-v34"
+
+Step 1: Create Git remote repo(https://github.com)
+	(https://github.com/Vikas-v34/learninggit)
+
+Step 2: Clone the repo just you have created
+	git clone url_repo
+
+Step 3: Add any file to the working repository(folder, here learninggit)
+
+Step 4:Git status is going to check whether there is any untrack file present inside the file
+	 Git Status
+
+
+Step 5:Adding file from working tree to staging area
+	Git add file_name
+	Git add .  //. represents entire files 
+
+Step 6:To save to local repository
+	Git Commit -m "message"
+
+Step 7:git push
+to push the files to github repository
+
+-------------------------------------------------------------------------------------
+
+When i create 1st local repository and then push the
+
+------------------------------------------------------------------------------
+Step 1: Create Empty Local Repository
+	git init
+Step 2: Add new file to working tree
+Step 3:Add file to Staging area
+	git add README.md
+	git add .
+Step 4:Save the files to local repository
+	git commit -m "first commit"
+Step 5:Set push url
+	git remote add origin remote_url
+Step 6 :Push the files to remote repository
+	git push -u origin master
+--------------------------------------------------------------
+
+transfer of files between system
+
+--------------------------------------------------------------------
+Step 1: Clone file int o both the user(here user 1 and user 3)
+
+______________________________________________________________
+Adding files to multiple repository
+step 1: Adding first repo to variable(all)
+git remote add all git_first url
+
+Step 2: Register git_first_url as push utl
+git remote set-url --add --push all git_first-url
+
+STep 3: Add another git url as push url
+git remote set-url --add --oush all git-another_url
+
+step 4:Push it to master branch
+git push all master
+
+________________________________________________________________
